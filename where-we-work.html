@@ -3,33 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACenFi | Home</title>
-    <link rel="stylesheet" href="./CSS/Style.css" />
+    <title>ACenFi | Where We Work</title>
+    <link rel="stylesheet" href="./CSS/www.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="icon" href="./assets/icon/ACenfi image .jpg" />
   </head>
   <body>
     <header>
       <div class="container">
-        <h1>Welcome to</h1>
         <div class="logo">
-          <a href="home.html"
-            ><img
-              src="./assets/icon/WhatsApp Image 2024-11-18 at 2.3.jpg"
-              alt="ACenFi"
-          /></a>
+          <a href="home.html">
+            <img src="./assets/icon/ACenfi image .jpg" alt="ACenFi" />
+          </a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <img src="assets/icon/menu.png" alt="Menu Icon" />
         </div>
         <nav>
-          <ul>
+          <ul class="menu" id="menu">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About Us</a></li>
-            <li><a href="./what-we-do.html">what-we-do</a></li>
+            <li><a href="./what-we-do.html">What We Do</a></li>
             <li><a href="./impact.html">Impact</a></li>
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="./opportunities.html">Opportunities</a></li>
-            <li><a href="./partner-with-us.html">Partner-With-Us</a></li>
+            <li><a href="./partner-with-us.html">Partner With Us</a></li>
             <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="search-bar">
+        <!-- <div class="search-bar">
           <form action="./php/search.php" method="get">
             <input
               type="text"
@@ -41,14 +57,97 @@
               <span>🔍</span>
             </button>
           </form>
-        </div>
+        </div> -->
       </div>
     </header>
 
     <main>
-      <h2>Main Content</h2>
+      <h1>Where We Work</h1>
+      <section class="intro">
+        <p class="paragraph-text">
+          We advise, research, and partner with diverse stakeholders to drive
+          impactful fintech and digital finance innovations, accelerate economic
+          growth, and enhance payment systems across Africa. Our mission is to
+          provide expert guidance, strategic insights, and actionable solutions
+          that ensure the long-term success and transformation of the digital
+          finance landscape.
+        </p>
+      </section>
+
+      <section class="stakeholders">
+        <article class="stakeholder">
+          <h2>Government Bodies and Regulators</h2>
+          <p>
+            We collaborate with government agencies, central banks, and
+            regulators to shape policies that promote inclusive digital finance
+            and payment systems, ensuring the accessibility, security, and
+            alignment of financial systems with national development objectives.
+          </p>
+        </article>
+
+        <article class="stakeholder">
+          <h2>Regional and Economic Stakeholders</h2>
+          <p>
+            We assist regional economic communities in optimizing cross-border
+            digital financial frameworks, fostering integration, and developing
+            instant and inclusive payment solutions to drive economic
+            cooperation and growth.
+          </p>
+        </article>
+
+        <article class="stakeholder">
+          <h2>Private Sector and Fintech Enterprises</h2>
+          <p>
+            We work alongside private sector players, fintech, and digital
+            finance companies to craft strong business models for inclusive
+            payment systems, ensuring alignment with market demands, compliance
+            with regulations, and fostering technological innovation.
+          </p>
+        </article>
+
+        <article class="stakeholder">
+          <h2>Development Partners and Non-Governmental Organizations</h2>
+          <p>
+            We partner with development organizations and NGOs to tackle
+            fintech, digital finance, and financial inclusion challenges through
+            research, advocacy, and capacity building. We strive to establish
+            long-term, inclusive financial ecosystems that benefit underserved
+            communities.
+          </p>
+        </article>
+
+        <article class="stakeholder">
+          <h2>Academic Institutions and Research Organizations</h2>
+          <p>
+            We collaborate with universities and research centers to encourage
+            innovation and knowledge-sharing, empowering the next generation of
+            fintech professionals and promoting research-driven approaches to
+            digital finance solutions.
+          </p>
+        </article>
+      </section>
     </main>
 
+    <!-- Call-to-Action Section -->
+    <section id="cta-section">
+      <div class="cta-container">
+        <h2>Join Us in Making a Difference</h2>
+        <p>Be a part of ACenFi's mission to empower communities globally.</p>
+        <div class="cta-buttons">
+          <a href="./impact.html" class="cta-button">
+            <i class="fas fa-chart-line"></i> Explore Our Impact
+          </a>
+          <a href="./partner-with-us.html" class="cta-button">
+            <i class="fas fa-handshake"></i> Partner with Us
+          </a>
+          <a href="#subscribe" class="cta-button">
+            <i class="fas fa-envelope"></i> Subscribe to Our Newsletter
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-left">
@@ -61,18 +160,18 @@
         <div class="footer-middle">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./what-we-do.html">what-we-do</a></li>
+            <li><a href="./home.html">Where We Work</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./what-we-do.html">What We Do</a></li>
             <li><a href="./impact.html">Impact</a></li>
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="./opportunities.html">Opportunities</a></li>
-            <li><a href="./partner-with-us.html">partner-with-us</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./partner-with-us.html">Partner With Us</a></li>
+            <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="footer-right">
+        <div class="footer-right" id="subscribe">
           <h3>Subscribe to Our Newsletter</h3>
           <form action="subscribe.php" method="post">
             <input
@@ -101,6 +200,14 @@
       </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

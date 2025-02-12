@@ -1,20 +1,22 @@
 <?php
 include 'connection.php';
 
-
-$query = "SELECT * FROM events ORDER BY date DESC LIMIT 5"; 
+$query = "SELECT * FROM events ORDER BY event_date ASC LIMIT 5";
 $result = $conn->query($query);
 
+$events = [];
 if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        echo '<div class="event-item">';
-        echo '<h3>' . $row['title'] . '</h3>';
-        echo '<p>' . $row['description'] . '</p>';
-        echo '<small>' . date("F j, Y", strtotime($row['date'])) . '</small>';
-        echo '</div>';
+    while ($row = $result->fetch_assoc()) {
+        $events[] = [
+            'title' => $row['title'],
+            'description' => $row['description'],
+            'event_date' => $row['event_date'],
+            'image_url' => $row['image_url']
+        ];
     }
+    echo json_encode($events);
 } else {
-    echo "<p>No events available.</p>";
+    echo json_encode([]);
 }
 
 $conn->close();

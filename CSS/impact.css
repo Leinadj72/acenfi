@@ -1,0 +1,467 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Header */
+header {
+  background-color: #4b2e1d;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-right: 30px;
+  color: white;
+  flex: 1;
+}
+
+header .logo img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.menu-icon img {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.menu li a:hover {
+  background: #65e8ff;
+  color: #004080;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Navbar */
+@media (max-width: 1024px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.search-bar button {
+  background: #4b2e1d;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background-color: #ca9c60;
+  color: white;
+  padding: 10vh 5vw;
+}
+
+.hero-section h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Impact Areas */
+.impact-areas {
+  text-align: center;
+  padding: 60px 5vw;
+  background-color: #f0f0f0;
+}
+
+.impact-areas h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.impact-area {
+  margin-bottom: 40px;
+}
+
+.impact-area h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.impact-area p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 60px 5vw;
+  background-color: #fff;
+}
+
+.testimonials h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.testimonial cite {
+  font-weight: bold;
+  color: #333;
+}
+
+#cta-section .cta-container {
+  background: #ca9c60;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Adds space between buttons */
+}
+
+#cta-section .cta-button {
+  background: white;
+  color: #004080;
+  padding: 12px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  flex: 1;
+  max-width: 250px; /* Limits button width */
+  text-align: center;
+}
+
+#cta-section .cta-button:hover {
+  background: #65e8ff;
+  color: #004080;
+}
+/* Footer */
+footer {
+  background: #5a3a27;
+  color: white;
+  padding: 40px 20px;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+footer .footer-left h3,
+footer .footer-middle h3,
+footer .footer-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer .footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-middle ul li {
+  margin-bottom: 8px;
+}
+
+footer .footer-middle ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+footer .footer-middle ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-right form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+footer .footer-right input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+footer .footer-right button {
+  background-color: #65e8ff;
+  color: #004080;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+footer .footer-right .social-links {
+  margin-top: 20px;
+}
+
+footer .footer-right .social-links a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsive Design */
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+  header .logo img {
+    max-width: 40px;
+    margin-left: -150px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #ca9c60;
+    position: absolute;
+    top: 50px; /* Adjusted for smaller screens */
+    right: 0; /* Less margin on smaller screens */
+    width: 160px; /* Slightly smaller width */
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    padding: 8px;
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .menu li a {
+    font-size: 14px; /* Reduce font size for better fit */
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon img {
+    width: 25px; /* Smaller icon for compact UI */
+    margin-left: 420px;
+    margin-top: -32px;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .impact-areas h3 {
+    font-size: 2rem;
+  }
+
+  .impact-area h4 {
+    font-size: 1.2rem;
+  }
+
+  .cta-container {
+    padding: 20px 5px;
+  }
+
+  #cta-section .cta-button {
+    width: 100%; /* Full width on mobile */
+    max-width: 250px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .testimonial {
+    font-size: 1rem;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  header .logo img {
+    max-width: 50px;
+    margin-left: -150px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #ca9c60;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 180px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-icon img {
+    display: block;
+    margin-left: 250px;
+    margin-top: -25px;
+  }
+
+  .impact-areas {
+    padding: 40px 5vw;
+  }
+
+  .cta-container {
+    padding: 20px 10px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjusts space for smaller screens */
+  }
+
+  #cta-section .cta-button {
+    width: 80%; /* Makes buttons take up more space while maintaining spacing */
+    max-width: 300px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .hero-section {
+    padding: 10vh 20vw;
+  }
+}

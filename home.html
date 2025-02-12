@@ -5,31 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACenFi | Home</title>
     <link rel="stylesheet" href="./CSS/Style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="./assets/icon/ACenfi image .jpg" />
   </head>
+
   <body>
     <header>
       <div class="container">
-        <h1>Welcome to</h1>
         <div class="logo">
           <a href="home.html"
-            ><img
-              src="./assets/icon/WhatsApp Image 2024-11-18 at 2.3.jpg"
-              alt="ACenFi"
+            ><img src="./assets/icon/ACenfi image .jpg" alt="ACenFi"
           /></a>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <img src="assets/icon/menu.png" alt="Menu Icon" />
+        </div>
         <nav>
-          <ul>
+          <ul class="menu" id="menu">
             <li><a href="./about.html">About Us</a></li>
             <li><a href="./what-we-do.html">What We Do</a></li>
-            <li><a href="./where-we-work.html">Where-We-Work</a></li>
+            <li><a href="./where-we-work.html">Where We Work</a></li>
             <li><a href="./impact.html">Impact</a></li>
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="./opportunities.html">Opportunities</a></li>
-            <li><a href="./partner-with-us.html">Partner-With-Us</a></li>
+            <li><a href="./partner-with-us.html">Partner With Us</a></li>
             <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="search-bar">
+        <!-- <div class="search-bar">
           <form action="./php/search.php" method="get">
             <input
               type="text"
@@ -37,23 +53,87 @@
               id="search"
               placeholder="Search..."
             />
-            <button type="submit">
-              <span>🔍</span>
-            </button>
+            <button type="submit"><span>🔍</span></button>
           </form>
-        </div>
+        </div> -->
       </div>
     </header>
 
     <main>
-      <h2>Main Content</h2>
-      <section id="news-item">
-        <h2>Latest News</h2>
-        <div class="news-container" id="news-container"></div>
+      <section class="intro-container">
+        <div class="intro">
+          <h1>Welcome to ACenFi</h1>
+          <p>
+            ACenFi is committed to empowering communities by providing financial
+            literacy, career development, and networking opportunities to create
+            a brighter future. ACENFI is a forward-thinking, Africa-based
+            organization dedicated to advancing the adoption and integration of
+            fintech innovations, inclusive financial services, sustainable
+            digital payment systems, and Digital MSME across the continent.
+          </p>
+          <a href="./about.html" class="cta-button">Read More</a>
+        </div>
       </section>
-      <section id="events-item">
+
+      <div class="hero-container">
+        <section id="hero-slider">
+          <div class="slide">
+            <img src="./assets/img/hero1.jpg" alt="Hero Image 1" />
+            <div class="caption">
+              <h2>Empowering Communities</h2>
+              <p>Join us in making a difference</p>
+              <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./assets/img/hero2.jpg" alt="Hero Image 2" />
+            <div class="caption">
+              <h2>Building Sustainable Futures</h2>
+              <p>Explore how we’re creating lasting change</p>
+              <a href="./impact.html" class="cta-button">Explore Our Impact</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./assets/img/hero3.jpg" alt="Hero Image 3" />
+            <div class="caption">
+              <h2>Partner With Us</h2>
+              <p>Together, we can achieve more</p>
+              <a href="./partner-with-us.html" class="cta-button"
+                >Partner with Us</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="news-section">
+        <h2>Latest News</h2>
+        <div class="news-container" id="news-list"></div>
+        <!-- <a href="./php/news.php" class="cta-button">See More News</a> -->
+      </section>
+
+      <section id="events-section">
         <h2>Upcoming Events</h2>
         <div class="events-container" id="events-container"></div>
+        <!-- <a href="./php/events.php" class="cta-button">See More Events</a> -->
+      </section>
+
+      <section id="cta-section">
+        <div class="cta-container">
+          <h2>Join Us in Making a Difference</h2>
+          <p>Be a part of ACenFi's mission to empower communities globally.</p>
+          <div class="cta-buttons">
+            <a href="./impact.html" class="cta-button">
+              <i class="fas fa-chart-line"></i> Explore Our Impact
+            </a>
+            <a href="./partner-with-us.html" class="cta-button">
+              <i class="fas fa-handshake"></i> Partner with Us
+            </a>
+            <a href="#subscribe" class="cta-button">
+              <i class="fas fa-envelope"></i> Subscribe to Our Newsletter
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -76,13 +156,13 @@
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="./opportunities.html">Opportunities</a></li>
             <li><a href="./partner-with-us.html">Partner With Us</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="footer-right">
+        <div class="footer-right" id="subscribe">
           <h3>Subscribe to Our Newsletter</h3>
-          <form action="subscribe.php" method="post">
+          <form action="./php/newsletter.php" method="post">
             <input
               type="email"
               name="email"
@@ -94,12 +174,24 @@
 
           <h3>Follow Us</h3>
           <div class="social-links">
-            <a href="https://facebook.com/acenfi" target="_blank">Facebook</a>
-            <a href="https://twitter.com/acenfi" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/company/acenfi" target="_blank"
+            <a href="https://facebook.com/acenfi" target="_blank" rel="noopener"
+              >Facebook</a
+            >
+            <a href="https://twitter.com/acenfi" target="_blank" rel="noopener"
+              >Twitter</a
+            >
+            <a
+              href="https://linkedin.com/company/acenfi"
+              target="_blank"
+              rel="noopener"
               >LinkedIn</a
             >
-            <a href="https://instagram.com/acenfi" target="_blank">Instagram</a>
+            <a
+              href="https://instagram.com/acenfi"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
           </div>
         </div>
       </div>
@@ -109,6 +201,14 @@
       </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

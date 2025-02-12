@@ -1,8 +1,8 @@
 <?php
-$servername =getenv("localhost");
-$username =getenv("root");
-$password =getenv("");
-$db_name =getenv("acenfi");
+$servername ="localhost";
+$username ="root";
+$password ="";
+$db_name ="acenfi_db";
 
 $conn = new mysqli($servername, $username, $password, $db_name);
 

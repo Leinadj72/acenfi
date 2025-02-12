@@ -4,16 +4,19 @@ include 'connection.php';
 $query = "SELECT * FROM news ORDER BY date DESC LIMIT 5";
 $result = $conn->query($query);
 
+$news = [];
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo '<div class="news-item">';
-        echo '<h3>' . $row['title'] . '</h3>';
-        echo '<p>' . $row['content'] . '</p>';
-        echo '<small>' . date("F j, Y", strtotime($row['date'])) . '</small>';
-        echo '</div>';
+        $news[] = [
+            'title' => $row['title'],
+            'content' => $row['content'],
+            'date' => $row['date'],
+            'image_url' => $row['image_url']
+        ];
     }
+    echo json_encode($news);
 } else {
-    echo "<p>No news available.</p>";
+    echo json_encode([]);
 }
 
 $conn->close();

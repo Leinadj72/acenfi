@@ -3,33 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACenFi | Home</title>
-    <link rel="stylesheet" href="./CSS/Style.css" />
+    <title>ACenFi | What We Do</title>
+    <link rel="stylesheet" href="./CSS/wwd.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="./assets/icon/ACenfi image .jpg" />
   </head>
   <body>
     <header>
       <div class="container">
-        <h1>Welcome to</h1>
         <div class="logo">
-          <a href="home.html"
-            ><img
-              src="./assets/icon/WhatsApp Image 2024-11-18 at 2.3.jpg"
-              alt="ACenFi"
-          /></a>
+          <a href="home.html">
+            <img src="./assets/icon/ACenfi image .jpg" alt="ACenFi" />
+          </a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <img src="assets/icon/menu.png" alt="Menu Icon" />
         </div>
         <nav>
-          <ul>
+          <ul class="menu" id="menu">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About Us</a></li>
-            <li><a href="./where-we-work.html">Where-We-Work</a></li>
+            <li><a href="./where-we-work.html">Where We Work</a></li>
             <li><a href="./impact.html">Impact</a></li>
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="./opportunities.html">Opportunities</a></li>
-            <li><a href="./partner-with-us.html">Partner-With-Us</a></li>
+            <li><a href="./partner-with-us.html">Partner With Us</a></li>
             <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="search-bar">
+        <!-- <div class="search-bar">
           <form action="./php/search.php" method="get">
             <input
               type="text"
@@ -41,14 +46,169 @@
               <span>🔍</span>
             </button>
           </form>
-        </div>
+        </div> -->
       </div>
     </header>
 
     <main>
-      <h2>Main Content</h2>
+      <section id="what-we-do">
+        <div class="container">
+          <h2>What We Do</h2>
+          <p>
+            Africa's financial ecosystem faces challenges in scaling and
+            sustaining fintech innovations, digital finance, and inclusive
+            payment systems limiting broader economic growth and financial
+            inclusion.
+          </p>
+          <p>
+            At ACenFi, we specialize in enhancing Africa’s financial ecosystem
+            by supporting the development, scaling, and sustainability of
+            fintech innovations, digital financial services, and inclusive
+            payment systems.
+          </p>
+          <p style="color: red;">
+            <em
+              >We provide strategic support from the early stages to
+              post-implementation, focusing on goal-setting, work plan
+              development, economic feasibility, and ongoing monitoring to
+              ensure continued success, sustainability, and effective scaling of
+              fintech and payment system initiatives</em
+            >
+          </p>
+        </div>
+
+        <div class="core-services">
+          <h3>Our Services</h3>
+
+          <div class="service-item">
+            <h4>Project Planning and Structuring</h4>
+            <ul>
+              <li>
+                <b>Project Goal Definition:</b> Helping project owners define
+                clear objectives and success metrics to ensure that fintech,
+                digital finance and payment system initiatives are aligned with
+                broader business and development goals.
+              </li>
+              <li>
+                <b>Work Plan Structuring:</b> Guiding the design of
+                comprehensive work plans, outlining milestones, timelines, and
+                resource requirements to optimize project implementation.
+              </li>
+              <li>
+                <b>Economic Feasibility Analysis:</b> Assessing the financial
+                viability of proposed projects, using robust financial modelling
+                tools to determine the long-term sustainability and potential
+                return on investment.
+              </li>
+            </ul>
+            <p style="color: red;">
+              <em
+                >We enhance the capacity of African institutions by providing
+                technical expertise, building institutional capabilities, and
+                offering specialized training programs to support professionals
+                and the successful implementation and scaling of fintech,
+                digital finance, and payment system solutions across the
+                continent.
+              </em>
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h4>Capacity Enhancement</h4>
+            <ul>
+              <li>
+                <b>Technical Expertise Provision:</b> Provision of skilled
+                technical experts to assist African institutions in implementing
+                and scaling fintech, digital finance and payment solutions
+                building local capacity and reducing dependence on external
+                support.
+              </li>
+              <li>
+                <b>Institutional Capacity Building:</b> Working with pan-African
+                institutions to enhance their ability to manage and support
+                fintech, digital finance and fintech projects through tailored
+                training programs and knowledge-sharing platforms.
+              </li>
+              <li>
+                <b>Targeted Training Programs:</b> Offering of specialized
+                training to develop the next generation of fintech, digital
+                finance and payment system professionals, helping individuals
+                and organizations build the skills required for successful
+                digital transformation.
+              </li>
+            </ul>
+            <p style="color: red;">
+              <em
+                >We provide actionable research, policy recommendations,
+                strategic guidance and consultancy to help organizations and
+                governments develop sustainable fintech solutions, inclusive
+                financial systems, and secure digital payment infrastructure
+                across Africa.
+              </em>
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h4>Research and Consultancy</h4>
+            <ul>
+              <li>
+                <b>Actionable Research:</b> Conducting in-depth research and
+                consultancy on fintech trends, digital finance, digital MSMEs,
+                and financial inclusion, providing valuable insights and
+                recommendations to inform policy and business strategies.
+              </li>
+              <li>
+                <b>Policy Recommendations:</b> Research-driven consultancy to
+                help stakeholders develop effective policies that promote
+                inclusive finance, secure digital payment systems, and
+                sustainable fintech ecosystems across Africa.
+              </li>
+              <li>
+                <b>Strategy Development:</b> Assisting organizations and
+                governments in developing long-term strategies to scale digital
+                financial services and payment systems, ensuring they meet local
+                needs and regulatory requirements.
+              </li>
+            </ul>
+            <p style="color: red;">
+              <em
+                >We advocate for regulatory reforms, engage key stakeholders,
+                and promote collaboration to foster the growth of inclusive
+                fintech, digital finance, and secure payment systems across
+                Africa.
+              </em>
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h4>Advocacy & Engagement</h4>
+            <ul>
+              <li>
+                <b>Regulatory Advocacy:</b> Leading advocate for regulatory
+                reforms and consumer protection initiatives that support the
+                growth of inclusive and secure fintech, digital finance and
+                payment solutions, working with policymakers and regulatory
+                bodies to create favourable environments for innovation.
+              </li>
+              <li>
+                <b>Stakeholder Engagement:</b> Convening key industry players,
+                including financial institutions, technology providers, and
+                government agencies, to foster collaboration and drive the
+                adoption of fintech, digital finance solutions and payments
+              </li>
+              <li>
+                <b>Collaboration Promotion:</b> Facilitating partnerships and
+                public-private sector collaborations that aim to create
+                scalable, fintech, digital finance, and payments solutions that
+                benefit diverse populations across Africa.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-left">
@@ -61,18 +221,18 @@
         <div class="footer-middle">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./home.html">What We Do</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="./where-we-work.html">Where We Work</a></li>
             <li><a href="./impact.html">Impact</a></li>
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="./opportunities.html">Opportunities</a></li>
-            <li><a href="./partner-with-us.html">partner-with-us</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./partner-with-us.html">Partner With Us</a></li>
+            <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="footer-right">
+        <div class="footer-right" id="subscribe">
           <h3>Subscribe to Our Newsletter</h3>
           <form action="subscribe.php" method="post">
             <input
@@ -101,6 +261,14 @@
       </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

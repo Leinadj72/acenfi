@@ -3,22 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACenFi | Home</title>
-    <link rel="stylesheet" href="./CSS/Style.css" />
+    <title>ACenFi | Impact</title>
+    <link rel="stylesheet" href="./CSS/impact.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="icon" href="./assets/icon/ACenfi image .jpg" />
   </head>
   <body>
     <header>
       <div class="container">
-        <h1>Welcome to</h1>
         <div class="logo">
-          <a href="home.html"
-            ><img
-              src="./assets/icon/WhatsApp Image 2024-11-18 at 2.3.jpg"
-              alt="ACenFi"
-          /></a>
+          <a href="home.html">
+            <img src="./assets/icon/ACenfi image .jpg" alt="ACenFi" />
+          </a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <img src="assets/icon/menu.png" alt="Menu Icon" />
         </div>
         <nav>
-          <ul>
+          <ul class="menu" id="menu">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About Us</a></li>
             <li><a href="./what-we-do.html">What We Do</a></li>
@@ -29,7 +45,7 @@
             <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="search-bar">
+        <!-- <div class="search-bar">
           <form action="./php/search.php" method="get">
             <input
               type="text"
@@ -41,14 +57,84 @@
               <span>🔍</span>
             </button>
           </form>
-        </div>
+        </div> -->
       </div>
     </header>
 
     <main>
-      <h2>Main Content</h2>
+      <section class="hero-section">
+        <h2 class="h2">Our Global Impact</h2>
+        <p>Empowering communities through sustainable initiatives worldwide.</p>
+        <img src="./assets/impact-image.jpg" alt="ACenFi Impact" />
+      </section>
+
+      <section class="impact-areas">
+        <h3 class="h3">Key Areas of Impact</h3>
+        <div class="impact-area">
+          <h4>Education</h4>
+          <p>
+            Improving education in rural areas with over 2000 students
+            benefitting annually.
+          </p>
+          <img src="./assets/education-image.jpg" alt="Education Impact" />
+        </div>
+        <div class="impact-area">
+          <h4>Healthcare</h4>
+          <p>
+            Providing healthcare services to underserved communities, with over
+            5000 people served in the last year.
+          </p>
+          <img src="./assets/healthcare-image.jpg" alt="Healthcare Impact" />
+        </div>
+        <!-- Add more areas as needed -->
+      </section>
+
+      <section class="testimonials">
+        <h3>What Our Beneficiaries Say</h3>
+        <div class="testimonial-carousel">
+          <div class="testimonial">
+            <p>
+              "ACenFi helped us build a school that has transformed our
+              community!"
+            </p>
+            <cite>- John Doe, Community Leader</cite>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Thanks to ACenFi's healthcare services, my family has access to
+              the care we need."
+            </p>
+            <cite>- Jane Smith, Healthcare Recipient</cite>
+          </div>
+          <!-- Add more testimonials as needed -->
+        </div>
+      </section>
+
+      <section class="locations">
+        <div id="map"></div>
+      </section>
+
+      <!-- Call-to-Action Section -->
+      <section id="cta-section">
+        <div class="cta-container">
+          <h2>Join Us in Making a Difference</h2>
+          <p>Be a part of ACenFi's mission to empower communities globally.</p>
+          <div class="cta-buttons">
+            <a href="./impact.html" class="cta-button">
+              <i class="fas fa-chart-line"></i> Explore Our Impact
+            </a>
+            <a href="./partner-with-us.html" class="cta-button">
+              <i class="fas fa-handshake"></i> Partner with Us
+            </a>
+            <a href="#subscribe" class="cta-button">
+              <i class="fas fa-envelope"></i> Subscribe to Our Newsletter
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-left">
@@ -61,18 +147,18 @@
         <div class="footer-middle">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./home.html">Impact</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="./what-we-do.html">What We Do</a></li>
             <li><a href="./where-we-work.html">Where We Work</a></li>
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="./opportunities.html">Opportunities</a></li>
             <li><a href="./partner-with-us.html">Partner With Us</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./contact-us.htm">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="footer-right">
+        <div class="footer-right" id="subscribe">
           <h3>Subscribe to Our Newsletter</h3>
           <form action="subscribe.php" method="post">
             <input
@@ -101,6 +187,14 @@
       </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
