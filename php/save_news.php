@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $image_url = '';
     if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-        $uploadDir = 'uploads/news_images/';
+        $uploadDir = __DIR__ . '/../uploads/news_images/';
         if (!is_dir($uploadDir)) {
             mkdir($uploadDir, 0777, true);
         }
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $imagePath = $uploadDir . $imageName;
 
         if (move_uploaded_file($imageTmpName, $imagePath)) {
-            $image_url = $imagePath;
+            $image_url = 'uploads/news_images/' . $imageName;
         } else {
             header("Location: add_news.php?message=Error uploading image.");
             exit;

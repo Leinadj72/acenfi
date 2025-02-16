@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
+  color: #1b1b1b;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 header {
-  background-color: #4b2e1d;
-  color: white;
+  background-color: #d8f0d3;
+  color: rgb(0, 0, 0);
   padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -34,7 +39,7 @@ header h1 {
 }
 
 header .logo img {
-  max-width: 80px;
+  max-width: 100px;
   height: auto;
   border-radius: 50%;
   margin-right: -150px;
@@ -60,20 +65,22 @@ header .logo img {
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
+  font-weight: bold;
 }
 
 .menu li a:hover {
-  background: #65e8ff;
-  color: #004080;
+  background: #00ff22;
+  /* color: #000000; */
+  border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
   padding-right: 250px;
   margin: 0;
 }
@@ -120,38 +127,43 @@ header nav ul li a:hover {
 
 /* Intro Section */
 .intro-container {
-  background: #f4f4f4;
-  padding: 50px 20px;
+  background: url('../assets/img/hero1.jpg') center/cover no-repeat;
   text-align: center;
+  color: white;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 30px;
-  background: white;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.65);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .intro h1 {
-  font-size: 28px;
-  color: #4b2e1d;
+  font-size: 32px;
+  font-weight: bold;
+  color: #19501e;
   margin-bottom: 10px;
 }
 
 .intro p {
   font-size: 16px;
-  color: #333;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .intro .cta-button {
   display: inline-block;
-  padding: 10px 20px;
-  background: #ca9c60;
-  color: #004080;
+  padding: 12px 20px;
+  background: #afa89f;
+  color: #000000;
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
@@ -159,8 +171,8 @@ header nav ul li a:hover {
 }
 
 .intro .cta-button:hover {
-  background: #65e8ff;
-  color: #004080;
+  background: #65ff98;
+  color: #000000;
 }
 
 /* Responsive Design for Intro Section */
@@ -183,10 +195,31 @@ header nav ul li a:hover {
 }
 
 .hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin-top: 30px;
+  overflow: hidden;
+  padding: 50px 20px;
+  text-align: center;
   background-color: #ca9c60;
-  padding: 50px 0;
   display: flex;
   justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #19501e;
+  z-index: 10;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 #hero-slider {
@@ -194,10 +227,12 @@ header nav ul li a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
   width: 90%;
   max-width: 1200px;
+  margin-top: 30px;
+  transition: transform 0.5s ease-in-out;
 }
 
 #hero-slider .slide {
@@ -252,6 +287,176 @@ header nav ul li a:hover {
 #hero-slider .cta-button:hover {
   background: #65e8ff;
   color: #004080;
+}
+
+/* Container Styles */
+.we-do-container,
+.work-container {
+  padding: 40px 20px;
+}
+
+.service-item-container,
+.stakeholder {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item-container:hover,
+.stakeholder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* What We Do Section */
+#what-we-do {
+  background: #ca9c60;
+}
+
+.service-item-container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #4b2e1d;
+}
+
+.service-item-container ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.service-item-container ul li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.service-item-container p {
+  font-style: italic;
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* Where We Work Section */
+#where-we-work {
+  background: #ca9c60;
+  color: white;
+}
+
+#where-we-work h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #237029;
+}
+
+.stakeholders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.stakeholder {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 40px);
+  max-width: calc(50% - 40px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stakeholder h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.stakeholder p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* CTA Button Styles */
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #4b2e1d;
+  background: #ffd700; /* Gold color for the button */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ffc107; /* Slightly darker gold on hover */
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-item-container,
+  .stakeholder {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .stakeholders {
+    flex-direction: column;
+  }
+
+  .service-item-container h4,
+  .stakeholder h2 {
+    font-size: 1.3rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .we-do-container,
+  .work-container {
+    padding: 20px 10px;
+  }
+
+  .service-item-container h4,
+  .stakeholder h2 {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+/* News and Events */
+#news-section,
+#events-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.news-container,
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.news-item,
+.event-item {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .news-container {
@@ -380,8 +585,8 @@ header nav ul li a:hover {
 }
 
 footer {
-  background: #5a3a27;
-  color: white;
+  background: #d8f0d3;
+  color: rgb(0, 0, 0);
   padding: 40px 20px;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -419,11 +624,12 @@ footer .footer-middle ul li {
 }
 
 footer .footer-middle ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
 footer .footer-middle ul li a:hover {
+  background: #00ff22;
   text-decoration: underline;
 }
 
@@ -453,24 +659,25 @@ footer .footer-right .social-links {
 }
 
 footer .footer-right .social-links a {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-right: 15px;
   font-size: 18px;
 }
 
 footer .footer-right .social-links a:hover {
-  color: #65e8ff;
+  /* color: #65e8ff; */
+  background: #00ff22;
 }
 
 footer .footer-bottom {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #bbb;
+  color: #6e6e6e;
 }
 
 footer .footer-bottom a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
@@ -570,6 +777,10 @@ footer .footer-bottom a:hover {
     font-size: 14px;
   }
 
+  .hero-container h1 {
+    font-size: 16px;
+  }
+
   .events-container,
   .news-container {
     grid-template-columns: 1fr;
@@ -645,6 +856,10 @@ footer .footer-bottom a:hover {
     max-width: 250px;
     padding: 8px 12px;
     font-size: 14px;
+  }
+
+  .hero-container h1 {
+    font-size: 16px;
   }
 
   footer .footer-content {

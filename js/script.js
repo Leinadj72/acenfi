@@ -65,7 +65,9 @@ function loadNews() {
             const imagePath = `${item.image_url}`;
             console.log('News Image Path:', imagePath); // Debugging
             const image = document.createElement('img');
-            image.src = imagePath;
+            image.src = item.image_url.startsWith('uploads')
+              ? `/${item.image_url}`
+              : item.image_url;
             image.alt = item.title;
             newsItem.appendChild(image);
           }
@@ -115,7 +117,9 @@ function loadEvents() {
             const imagePath = `${event.image_url}`;
             console.log('Event Image Path:', imagePath); // Debugging
             const image = document.createElement('img');
-            image.src = imagePath;
+            image.src = event.image_url.startsWith('uploads')
+              ? `/${event.image_url}`
+              : event.image_url;
             image.alt = event.title;
             eventItem.appendChild(image);
           }
