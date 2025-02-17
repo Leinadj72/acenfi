@@ -391,7 +391,7 @@ footer .footer-bottom a:hover {
     display: block;
   }
 
-  .menu-icon img {
+  .menu-icon i {
     width: 25px; /* Smaller icon for compact UI */
     margin-left: 420px;
     margin-top: -32px;
@@ -457,7 +457,7 @@ footer .footer-bottom a:hover {
     display: flex;
   }
 
-  .menu-icon img {
+  .menu-icon i {
     display: block;
     margin-left: 250px;
     margin-top: -25px;
