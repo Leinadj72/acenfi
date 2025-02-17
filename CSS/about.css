@@ -1,4 +1,5 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,13 +11,11 @@ a {
   text-decoration: none;
 }
 
-/* Header */
 header {
-  background-color: #4b2e1d;
-  color: white;
+  background-color: #d8f0d3;
+  color: rgb(0, 0, 0);
   padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 header .container {
@@ -36,12 +35,12 @@ header h1 {
 }
 
 header .logo img {
-  max-width: 80px;
+  max-width: 100px;
   height: auto;
   border-radius: 50%;
 }
 
-.menu-icon img {
+.menu-icon i {
   width: 30px;
   cursor: pointer;
   display: none;
@@ -61,13 +60,14 @@ header .logo img {
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
+  font-weight: bold;
 }
 
 .menu li a:hover {
-  background: #65e8ff;
-  color: #004080;
+  text-decoration: underline;
+  border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -75,7 +75,8 @@ header nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
-  margin: 50px;
+  padding: 0;
+  margin: 0;
 }
 
 header nav ul li a {
@@ -118,136 +119,101 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 
-/* Call-to-Action Section */
-#cta-section .cta-container {
-  background: #004080;
-  color: white;
+.about-container {
+  background: url('../assets/img/hero3.jpg') center/cover no-repeat;
   text-align: center;
-  padding: 40px 20px;
-  border-radius: 10px;
-  margin-bottom: 10vh;
-}
-
-.cta-buttons {
+  color: white;
+  padding: 100px 20px;
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+  align-items: center;
 }
 
-#cta-section .cta-button {
-  background: white;
-  color: #004080;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
+#about-acenfi {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#cta-section .cta-button:hover {
-  background: #65e8ff;
-  color: #004080;
+#about-acenfi h2 {
+  font-size: 32px;
+  color: #1b4d3e;
+  margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-  background: #5a3a27;
-  color: white;
-  padding: 40px 20px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: space-around;
-}
-
-footer .footer-left h3,
-footer .footer-middle h3,
-footer .footer-right h3 {
+#about-acenfi p {
   font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+#our-team {
+  background: #eef7f1;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#our-team h2 {
+  font-size: 32px;
+  color: #1b4d3e;
+  margin-bottom: 20px;
+}
+
+.leadership {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.leader {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+}
+
+.leader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.leader h3 {
+  font-size: 20px;
+  color: #1b4d3e;
   margin-bottom: 10px;
 }
 
-footer .footer-left p,
-footer .footer-middle ul,
-footer .footer-right form,
-footer .footer-right .social-links {
-  font-size: 14px;
+.leader p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-footer .footer-middle ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer .footer-middle ul li {
-  margin-bottom: 8px;
-}
-
-footer .footer-middle ul li a {
+.read-more {
+  text-decoration: none;
   color: white;
-  font-weight: bold;
-}
-
-footer .footer-middle ul li a:hover {
-  text-decoration: underline;
-}
-
-footer .footer-right form {
-  display: flex;
-  gap: 10px;
-}
-
-footer .footer-right input {
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  width: 200px;
-}
-
-footer .footer-right button {
-  background-color: #65e8ff;
-  color: #004080;
+  background: #1b4d3e;
   padding: 8px 15px;
   border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-footer .footer-right .social-links {
-  margin-top: 20px;
-}
-
-footer .footer-right .social-links a {
-  color: white;
-  margin-right: 15px;
-  font-size: 18px;
-}
-
-footer .footer-right .social-links a:hover {
-  color: #65e8ff;
-}
-
-footer .footer-bottom {
-  text-align: center;
-  margin-top: 20px;
+  display: inline-block;
   font-size: 14px;
-  color: #bbb;
 }
 
-footer .footer-bottom a {
-  color: white;
-  font-weight: bold;
+.read-more:hover {
+  background: #ffcc29;
+  color: #1b4d3e;
 }
 
-footer .footer-bottom a:hover {
-  text-decoration: underline;
-}
-
-.footer-middle {
-  margin-left: 2%;
-}
-
-/* Company History */
 #company-history {
   background-color: #fff;
   padding: 40px 20px;
@@ -276,17 +242,64 @@ footer .footer-bottom a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Section: Meet Our Team */
-#team {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  margin-bottom: 40px;
+#our-collaborators {
+  background: white;
+  padding: 80px 20px;
+  text-align: center;
 }
 
-#team h2 {
-  font-size: 28px;
-  color: #4b2e1d;
+#our-collaborators h2 {
+  font-size: 32px;
+  color: #1b4d3e;
   margin-bottom: 20px;
+}
+
+#our-collaborators p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+#our-values {
+  background: #eef7f1;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#our-values h2 {
+  font-size: 32px;
+  color: #1b4d3e;
+  margin-bottom: 20px;
+}
+
+#our-values p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#our-values ul {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#our-values ul li {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #1b4d3e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#our-values ul li strong {
+  color: #ffcc29;
 }
 
 .team-container {
@@ -336,10 +349,135 @@ footer .footer-bottom a:hover {
 }
 
 .team-member .read-more:hover {
+  text-decoration: none;
+}
+
+#cta-section .cta-container {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#cta-section .cta-button {
+  background: white;
+  color: #004080;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#cta-section .cta-button:hover {
+  background: #65e8ff;
+  color: #004080;
+}
+
+footer {
+  background: #d8f0d3;
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-left h3,
+footer .footer-middle h3,
+footer .footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-middle {
+  margin-left: 2%;
+}
+
+footer .footer-left p,
+footer .footer-middle ul,
+footer .footer-right form,
+footer .footer-right .social-links {
+  font-size: 14px;
+}
+
+footer .footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-middle ul li {
+  margin-bottom: 8px;
+}
+
+footer .footer-middle ul li a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+footer .footer-middle ul li a:hover {
   text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
+footer .footer-right form {
+  display: flex;
+  gap: 10px;
+}
+
+footer .footer-right input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+footer .footer-right button {
+  background-color: #65e8ff;
+  color: #004080;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+footer .footer-right .social-links {
+  margin-top: 20px;
+}
+
+footer .footer-right .social-links a {
+  color: rgb(0, 0, 0);
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+footer .footer-right .social-links a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6e6e6e;
+}
+
+footer .footer-bottom a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+footer .footer-bottom a:hover {
+  text-decoration: underline;
+}
 
 /* Large devices (desktops) */
 @media (min-width: 1024px) {
@@ -366,7 +504,6 @@ footer .footer-bottom a:hover {
   }
 }
 
-/* Tablets and Small Desktops */
 @media (max-width: 1024px) {
   header .container {
     flex-direction: column;
@@ -407,7 +544,6 @@ footer .footer-bottom a:hover {
   }
 }
 
-/* Mobile Phones */
 @media (max-width: 768px) {
   header .container {
     padding: 0 20px;
@@ -418,14 +554,14 @@ footer .footer-bottom a:hover {
   }
 
   header .logo img {
-    max-width: 60px;
+    max-width: 80px;
     margin-left: -300px;
   }
 
   .menu {
     display: none;
     flex-direction: column;
-    background: #ca9c60;
+    background: #d8f0d3;
     position: absolute;
     top: 60px;
     right: 0;
@@ -438,7 +574,7 @@ footer .footer-bottom a:hover {
     display: flex;
   }
 
-  .menu-icon img {
+  .menu-icon i {
     display: block;
     margin-left: 500px;
     margin-top: -25px;
@@ -446,6 +582,10 @@ footer .footer-bottom a:hover {
 
   header nav ul {
     gap: 10px;
+  }
+
+  header nav ul li a:hover {
+    text-decoration: underline;
   }
 
   .cta-container {
@@ -467,17 +607,16 @@ footer .footer-bottom a:hover {
   }
 }
 
-/* Extra Small Devices (Mobile Phones in Portrait Mode) */
 @media (max-width: 480px) {
   header .logo img {
-    max-width: 50px;
+    max-width: 60px;
     margin-left: -150px;
   }
 
   .menu {
     display: none;
     flex-direction: column;
-    background: #ca9c60;
+    background: #d8f0d3;
     position: absolute;
     top: 50px; /* Adjusted for smaller screens */
     right: 0; /* Less margin on smaller screens */
@@ -503,7 +642,7 @@ footer .footer-bottom a:hover {
     display: block;
   }
 
-  .menu-icon img {
+  .menu-icon i {
     width: 25px; /* Smaller icon for compact UI */
     margin-left: 300px;
     margin-top: -32px;
@@ -515,6 +654,10 @@ footer .footer-bottom a:hover {
 
   header nav ul li a {
     font-size: 14px;
+  }
+
+  header nav ul li a:hover {
+    text-decoration: underline;
   }
 
   .cta-button {

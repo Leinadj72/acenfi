@@ -42,10 +42,9 @@ header .logo img {
   max-width: 100px;
   height: auto;
   border-radius: 50%;
-  margin-right: -150px;
 }
 
-.menu-icon img {
+.menu-icon i {
   width: 30px;
   cursor: pointer;
   display: none;
@@ -71,8 +70,7 @@ header .logo img {
 }
 
 .menu li a:hover {
-  background: #00ff22;
-  /* color: #000000; */
+  text-decoration: underline;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
@@ -80,8 +78,8 @@ header .logo img {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 10px;
-  padding-right: 250px;
+  gap: 15px;
+  padding: 0;
   margin: 0;
 }
 
@@ -629,7 +627,6 @@ footer .footer-middle ul li a {
 }
 
 footer .footer-middle ul li a:hover {
-  background: #00ff22;
   text-decoration: underline;
 }
 
@@ -665,8 +662,7 @@ footer .footer-right .social-links a {
 }
 
 footer .footer-right .social-links a:hover {
-  /* color: #65e8ff; */
-  background: #00ff22;
+  text-decoration: underline;
 }
 
 footer .footer-bottom {
@@ -730,15 +726,14 @@ footer .footer-bottom a:hover {
   }
 
   header .logo img {
-    max-width: 60px;
+    max-width: 80px;
     margin-left: 0;
   }
 
   .menu {
     display: none;
     flex-direction: column;
-    background: #ca9c60;
-    position: absolute;
+    background: #d8f0d3;
     top: 60px;
     right: 0;
     width: 180px;
@@ -750,7 +745,7 @@ footer .footer-bottom a:hover {
     display: flex;
   }
 
-  .menu-icon img {
+  .menu-icon i {
     display: block;
     margin-left: 500px;
     margin-top: -25px;
@@ -758,6 +753,10 @@ footer .footer-bottom a:hover {
 
   header nav ul {
     flex-direction: column;
+  }
+
+  header nav ul li a:hover {
+    text-decoration: underline;
   }
 
   .cta-container {
@@ -794,11 +793,15 @@ footer .footer-bottom a:hover {
 
 /* Mobile Phone Responsiveness */
 @media screen and (max-width: 480px) {
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
-    background: #ca9c60;
     position: absolute;
+    background: #d8f0d3;
     top: 50px; /* Adjusted for smaller screens */
     right: 0; /* Less margin on smaller screens */
     width: 160px; /* Slightly smaller width */
@@ -819,11 +822,11 @@ footer .footer-bottom a:hover {
     font-size: 14px; /* Reduce font size for better fit */
   }
 
-  .menu-icon {
+  .menu-icon i {
     display: block;
   }
 
-  .menu-icon img {
+  .menu-icon i {
     width: 25px; /* Smaller icon for compact UI */
     margin-left: 300px;
     margin-top: -32px;

@@ -1,9 +1,24 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
+  color: #1b1b1b;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+header {
+  background-color: #d8f0d3;
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1,
@@ -13,22 +28,10 @@ h4 {
   color: #333;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-/* Header */
-header {
-  background-color: #4b2e1d;
-  color: white;
-  padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -54,7 +57,7 @@ header .logo img {
   border-radius: 50%;
 }
 
-.menu-icon img {
+.menu-icon i {
   width: 30px;
   cursor: pointer;
   display: none;
@@ -74,13 +77,14 @@ header .logo img {
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
+  font-weight: bold;
 }
 
 .menu li a:hover {
-  background: #65e8ff;
-  color: #004080;
+  text-decoration: underline;
+  border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -94,7 +98,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: white;
+  color: black;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -147,9 +151,10 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero-section {
   text-align: center;
-  background-color: #ca9c60;
-  color: white;
-  padding: 10vh 5vw;
+  background-color: #dcedf1;
+  color: black;
+  padding: 80px 20px;
+  margin: 70px;
 }
 
 .hero-section h2 {
@@ -167,6 +172,7 @@ header nav ul li a:hover {
   text-align: center;
   padding: 60px 5vw;
   background-color: #f0f0f0;
+  margin: 50px;
 }
 
 .impact-areas h3 {
@@ -249,25 +255,35 @@ header nav ul li a:hover {
   background: #65e8ff;
   color: #004080;
 }
-/* Footer */
+
 footer {
-  background: #5a3a27;
-  color: white;
+  background: #d8f0d3;
+  color: rgb(0, 0, 0);
   padding: 40px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer .footer-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  text-align: center;
 }
 
 footer .footer-left h3,
 footer .footer-middle h3,
 footer .footer-right h3 {
-  font-size: 1.2rem;
+  font-size: 18px;
   margin-bottom: 10px;
+}
+
+.footer-middle {
+  margin-left: 2%;
+}
+
+footer .footer-left p,
+footer .footer-middle ul,
+footer .footer-right form,
+footer .footer-right .social-links {
+  font-size: 14px;
 }
 
 footer .footer-middle ul {
@@ -280,7 +296,7 @@ footer .footer-middle ul li {
 }
 
 footer .footer-middle ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
@@ -291,7 +307,6 @@ footer .footer-middle ul li a:hover {
 footer .footer-right form {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
 }
 
 footer .footer-right input {
@@ -315,19 +330,30 @@ footer .footer-right .social-links {
 }
 
 footer .footer-right .social-links a {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-right: 15px;
   font-size: 18px;
+}
+
+footer .footer-right .social-links a:hover {
+  text-decoration: underline;
 }
 
 footer .footer-bottom {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #bbb;
+  color: #6e6e6e;
 }
 
-/* Responsive Design */
+footer .footer-bottom a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+footer .footer-bottom a:hover {
+  text-decoration: underline;
+}
 
 /* Small Screens (Mobile) */
 @media (max-width: 480px) {
@@ -339,7 +365,7 @@ footer .footer-bottom {
   .menu {
     display: none;
     flex-direction: column;
-    background: #ca9c60;
+    background: #d8f0d3;
     position: absolute;
     top: 50px; /* Adjusted for smaller screens */
     right: 0; /* Less margin on smaller screens */
@@ -418,7 +444,7 @@ footer .footer-bottom {
   .menu {
     display: none;
     flex-direction: column;
-    background: #ca9c60;
+    background: #d8f0d3;
     position: absolute;
     top: 60px;
     right: 0;
