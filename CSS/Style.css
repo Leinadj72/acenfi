@@ -254,8 +254,8 @@ header nav ul li a:hover {
 /* Caption */
 #hero-slider .caption {
   padding: 15px;
-  background: #004080;
-  color: white;
+  background: #e4ffed;
+  color: black;
   width: 100%;
   box-sizing: border-box;
   border-radius: 0 0 10px 10px;
@@ -274,8 +274,8 @@ header nav ul li a:hover {
 #hero-slider .cta-button {
   display: inline-block;
   padding: 8px 12px;
-  background: #ffffff;
-  color: #004080;
+  background: #afa89f;
+  color: black;
   font-weight: bold;
   border-radius: 5px;
   margin-top: 10px;
@@ -283,8 +283,8 @@ header nav ul li a:hover {
 }
 
 #hero-slider .cta-button:hover {
-  background: #65e8ff;
-  color: #004080;
+  background: #65ff98;
+  color: black;
 }
 
 .service-item-container,
