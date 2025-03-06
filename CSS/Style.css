@@ -127,7 +127,7 @@ header nav ul li a:hover {
 .intro-container {
   background: url('../assets/img/hero1.jpg') center/cover no-repeat;
   text-align: center;
-  color: white;
+  color: black;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@ header nav ul li a:hover {
 .intro h1 {
   font-size: 32px;
   font-weight: bold;
-  color: #19501e;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -200,7 +200,7 @@ header nav ul li a:hover {
   overflow: hidden;
   padding: 50px 20px;
   text-align: center;
-  background-color: #ca9c60;
+  background-color: #eef7f1;
   display: flex;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -213,7 +213,7 @@ header nav ul li a:hover {
   transform: translateX(-50%);
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  color: #19501e;
+  color: black;
   z-index: 10;
   margin: 0;
   padding: 10px 20px;
@@ -287,12 +287,6 @@ header nav ul li a:hover {
   color: #004080;
 }
 
-/* Container Styles */
-.we-do-container,
-.work-container {
-  padding: 40px 20px;
-}
-
 .service-item-container,
 .stakeholder {
   background: white;
@@ -307,11 +301,6 @@ header nav ul li a:hover {
 .stakeholder:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* What We Do Section */
-#what-we-do {
-  background: #ca9c60;
 }
 
 .service-item-container h4 {
@@ -333,21 +322,20 @@ header nav ul li a:hover {
 
 .service-item-container p {
   font-style: italic;
-  color: red;
   margin-bottom: 20px;
 }
 
 /* Where We Work Section */
 #where-we-work {
-  background: #ca9c60;
-  color: white;
+  background: #eef7f1;
+  color: black;
 }
 
 #where-we-work h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   text-align: center;
-  color: #237029;
+  color: black;
 }
 
 .stakeholders {
@@ -369,12 +357,16 @@ header nav ul li a:hover {
 .stakeholder h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: white;
+  color: black;
 }
 
 .stakeholder p {
-  color: #ddd;
+  color: black;
   margin-bottom: 20px;
+}
+
+.stakeholder ul {
+  list-style-type: none;
 }
 
 /* CTA Button Styles */
@@ -383,7 +375,7 @@ header nav ul li a:hover {
   padding: 10px 20px;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  color: #4b2e1d;
+  color: black;
   background: #ffd700; /* Gold color for the button */
   text-decoration: none;
   border-radius: 5px;
@@ -548,8 +540,8 @@ header nav ul li a:hover {
 }
 
 #cta-section .cta-container {
-  background: #ca9c60;
-  color: white;
+  background: #eef7f1;
+  color: black;
   text-align: center;
   padding: 40px 20px;
   border-radius: 10px;
@@ -564,7 +556,7 @@ header nav ul li a:hover {
 }
 
 #cta-section .cta-button {
-  background: white;
+  background: #afa89f;
   color: #004080;
   padding: 12px 18px;
   border-radius: 5px;
@@ -578,8 +570,8 @@ header nav ul li a:hover {
 }
 
 #cta-section .cta-button:hover {
-  background: #65e8ff;
-  color: #004080;
+  background: #65ff98;
+  color: black;
 }
 
 footer {

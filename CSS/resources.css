@@ -121,7 +121,7 @@ header .search-bar button:hover {
   text-align: center;
   margin-bottom: 30px;
   font-size: 28px;
-  color: #2c3e50;
+  color: black;
 }
 
 .resources-container {
@@ -151,14 +151,14 @@ header .search-bar button:hover {
 .resources-container .report a {
   display: inline-block;
   color: white;
-  background-color: #00ff00;
+  background-color: #afa89f;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .resources-container .report a:hover {
-  background-color: #0b960b;
+  background-color: #65ff98;
 }
 
 #archives {

@@ -135,12 +135,42 @@ main {
   padding: 40px 20px;
 }
 
+.oppor-container {
+  background: url('../assets/img/opportunities.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -39px -20px;
+}
+
+#oppor-acenfi {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#oppor-acenfi h2 {
+  font-size: 32px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#oppor-acenfi p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: black;
+}
+
 #opportunities {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 40px;
   padding: 20px;
@@ -161,9 +191,9 @@ main {
 
 .opportunity-category h3 {
   font-size: 22px;
-  color: #19501e; /* Dark green for headings */
+  color: black;
   margin-bottom: 15px;
-  border-bottom: 2px solid #19501e; /* Add a border below the heading */
+  border-bottom: 2px solid black; /* Add a border below the heading */
   padding-bottom: 10px;
 }
 
@@ -178,7 +208,7 @@ main {
 }
 
 .opportunity-category li a {
-  color: #004080; /* Dark blue for links */
+  color: black; /* Dark blue for links */
   font-size: 16px;
   text-decoration: none;
   display: flex;
@@ -189,21 +219,21 @@ main {
 }
 
 .opportunity-category li a:hover {
-  color: #007bff; /* Blue on hover */
+  color: #65ff98; /* Blue on hover */
   text-decoration: underline;
 }
 
 /* Add icons to list items */
 .opportunity-category li a::before {
   content: '•';
-  color: #19501e; /* Dark green for bullet points */
+  color: black; /* Dark green for bullet points */
   font-size: 20px;
   list-style-type: none;
 }
 
 #cta-section .cta-container {
-  background: #ca9c60;
-  color: white;
+  background: #eef7f1;
+  color: black;
   text-align: center;
   padding: 40px 20px;
   border-radius: 10px;
@@ -220,7 +250,7 @@ main {
 
 #cta-section .cta-button {
   background: white;
-  color: #004080;
+  color: black;
   padding: 12px 18px;
   border-radius: 5px;
   text-decoration: none;
@@ -233,8 +263,8 @@ main {
 }
 
 #cta-section .cta-button:hover {
-  background: #65e8ff;
-  color: #004080;
+  background: #49b36c;
+  color: black;
 }
 
 footer {

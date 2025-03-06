@@ -1,4 +1,4 @@
-console.log('ACenFi website loaded!');
+console.log('acenfi website loaded!');
 
 function toggleMenu() {
   const menu = document.getElementById('menu');

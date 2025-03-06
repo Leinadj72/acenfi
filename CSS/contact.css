@@ -166,7 +166,7 @@ main {
 .contact-us-container select {
   padding: 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 5px;
   width: 100%;
 }
@@ -176,8 +176,8 @@ main {
 }
 
 .contact-us-container button {
-  background-color: #00ff22;
-  color: white;
+  background-color: #afa89f;
+  color: black;
   padding: 14px;
   border: none;
   border-radius: 5px;
@@ -187,7 +187,7 @@ main {
 }
 
 .contact-us-container button:hover {
-  background-color: #00b818;
+  background-color: #65ff98;
 }
 
 footer {

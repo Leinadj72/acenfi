@@ -141,14 +141,14 @@ header nav ul li a:hover {
 
 #about-acenfi h2 {
   font-size: 32px;
-  color: #1b4d3e;
+  color: black;
   margin-bottom: 20px;
 }
 
 #about-acenfi p {
   font-size: 18px;
   line-height: 1.8;
-  color: #555;
+  color: black;
 }
 
 #our-team {
@@ -159,7 +159,7 @@ header nav ul li a:hover {
 
 #our-team h2 {
   font-size: 32px;
-  color: #1b4d3e;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -189,20 +189,20 @@ header nav ul li a:hover {
 
 .leader h3 {
   font-size: 20px;
-  color: #1b4d3e;
+  color: black;
   margin-bottom: 10px;
 }
 
 .leader p {
   font-size: 16px;
-  color: #666;
+  color: black;
   margin-bottom: 10px;
 }
 
 .read-more {
   text-decoration: none;
-  color: white;
-  background: #1b4d3e;
+  color: #004080;
+  background: #afa89f;
   padding: 8px 15px;
   border-radius: 5px;
   display: inline-block;
@@ -210,8 +210,8 @@ header nav ul li a:hover {
 }
 
 .read-more:hover {
-  background: #ffcc29;
-  color: #1b4d3e;
+  background: #65ff98;
+  color: black;
 }
 
 #company-history {
@@ -224,13 +224,13 @@ header nav ul li a:hover {
 
 #company-history h2 {
   font-size: 28px;
-  color: #4b2e1d;
+  color: black;
   margin-bottom: 20px;
 }
 
 #company-history p {
   font-size: 16px;
-  color: #333;
+  color: black;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -250,14 +250,14 @@ header nav ul li a:hover {
 
 #our-collaborators h2 {
   font-size: 32px;
-  color: #1b4d3e;
+  color: black;
   margin-bottom: 20px;
 }
 
 #our-collaborators p {
   font-size: 18px;
   line-height: 1.8;
-  color: #555;
+  color: black;
 }
 
 #our-values {
@@ -268,14 +268,14 @@ header nav ul li a:hover {
 
 #our-values h2 {
   font-size: 32px;
-  color: #1b4d3e;
+  color: black;
   margin-bottom: 20px;
 }
 
 #our-values p {
   font-size: 18px;
   line-height: 1.8;
-  color: #555;
+  color: black;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -294,12 +294,14 @@ header nav ul li a:hover {
   border-radius: 5px;
   margin-bottom: 10px;
   font-size: 18px;
-  color: #1b4d3e;
+  color: black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #our-values ul li strong {
-  color: #ffcc29;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .team-container {
@@ -332,13 +334,13 @@ header nav ul li a:hover {
 
 .team-member h3 {
   font-size: 20px;
-  color: #4b2e1d;
+  color: black;
   margin: 10px 0;
 }
 
 .team-member p {
   font-size: 16px;
-  color: #777;
+  color: black;
 }
 
 .team-member .read-more {

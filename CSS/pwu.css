@@ -167,12 +167,25 @@ main {
   color: #4b2e1d;
 }
 
-#partner-intro {
+.partner-container {
+  background: url('../assets/img/pwu.jpg') center/cover no-repeat;
   text-align: center;
-  padding: 40px 20px;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #f0f0f0, #fff);
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -17px -83px;
+}
+
+#partner-intro {
+  background: rgba(255, 255, 255, 0.651);
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #partner-intro h2 {
@@ -183,6 +196,7 @@ main {
 #partner-benefits {
   text-align: center;
   padding: 40px 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   background: linear-gradient(to right, #f0f0f0, #fff);
   border-radius: 10px;
@@ -199,6 +213,7 @@ footer {
   color: rgb(0, 0, 0);
   padding: 40px 20px;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 footer .footer-content {
